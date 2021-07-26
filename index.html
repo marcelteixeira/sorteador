@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Sorteador!!!</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/four_leaf_clover.svg" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+
+
+
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Sorteador!!!</h1>
+            <form>
+                <fieldset>
+                    <!-- <legend hidden>Intervalo</legend> -->
+                    <label >Intervalo:</label>
+                    <label for="sortearDe" hidden>De:</label>
+                    <input type="number" id="sortearDe" placeholder="De:">
+                    -
+                    <label for="sortearAte" hidden>Até</label>
+                    <input type="number" id="sortearAte" placeholder="Até:">
+                </fieldset>
+            </form>
+        </header>
+        
+        <div class="destaque numeroSorteado">
+            <h1 id="exibirNumeroSorteado">...</h1>
+        </div>
+
+        <div id="exibirNumerosAnteriores" class="destaque">
+
+        </div>
+
+        <div class="sortear">
+            <input type="button" value="Sortear" id="btnSortear">
+            <input type="button" value="Finalizar Sorteio" id="btnFinalizar">
+            <input type="button" value="Reiniciar" id="btnReiniciar">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Desenvolvido por <a href="https://github.com/marcelteixeira" target="_blank">Marcel Teixeira 💻 </a></p>
+        </footer>
+    </div>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
